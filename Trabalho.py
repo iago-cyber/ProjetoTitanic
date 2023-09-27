@@ -70,7 +70,8 @@ fareMode = fareColumn.mode()[0]
 # limpando os dados da coluna tarifa
 fareColumn.fillna(fareMode, inplace=True)
 
-# grafico de disperção, com bug
+
+# grafico de disperção
 plt.scatter ( ageColumn, fareColumn, alpha=0.5 )
 plt.title("idade por tarifa")
 plt.xlabel("idade")
